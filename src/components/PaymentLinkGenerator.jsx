@@ -4,7 +4,8 @@ function PaymentLinkGenerator({upiId,merchantName,transactionAmount}) {
     console.log(upiId,merchantName,transactionAmount,"META DATA")
     const encodedUpiId = encodeURIComponent(upiId);
    
-    const transactionUrl = `upi://pay?pa=${encodedUpiId}&pn=${merchantName}&am=${transactionAmount}`;
+    const transactionUrl = `upi://pay?pa=${encodedUpiId}&pn=${merchantName}&am=${transactionAmount.toString()}`;
+
   
     const handlePayment = () => {
       const userAgent = navigator.userAgent ;
