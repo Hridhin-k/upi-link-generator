@@ -1,5 +1,5 @@
 import PaymentLinkGenerator from "./components/PaymentLinkGenerator";
-
+import "./App.css";
 function App() {
   const upId = "hridhin@federal";
   const merchantName = "hridhin";

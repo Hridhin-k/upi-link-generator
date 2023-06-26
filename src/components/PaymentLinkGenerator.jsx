@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../App.css";
 function PaymentLinkGenerator({upiId,merchantName,transactionAmount}) {
     console.log(upiId,merchantName,transactionAmount,"META DATA")
     const encodedUpiId = encodeURIComponent(upiId);
@@ -21,7 +21,7 @@ function PaymentLinkGenerator({upiId,merchantName,transactionAmount}) {
     };
   return (
     <div>
-    <button onClick={handlePayment}>Click here to send money</button>
+    <button className="button" onClick={handlePayment}>Click here to send money</button>
     </div>
   )
 }
