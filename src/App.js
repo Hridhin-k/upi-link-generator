@@ -1,7 +1,7 @@
 import PaymentLinkGenerator from "./components/PaymentLinkGenerator";
 
 function App() {
-  const upId = "974614144692@paytm";
+  const upId = "hridhin@federal";
   const merchantName = "hridhin";
   const transactionAmount = "2700";
   return (
