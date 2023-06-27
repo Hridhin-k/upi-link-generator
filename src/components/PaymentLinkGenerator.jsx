@@ -22,7 +22,8 @@ function PaymentLinkGenerator({ upiId, merchantName, transactionAmount }) {
 
   return (
     <div>
-     <a href="upi://pay?pa=hridhin@federal&amp;pn=FNAME SNAME K&amp;cu=INR" class="upi-pay1">Pay Now !</a>
+   <a href="upi://pay?pa=hridhin@federal&pn=FNAME SNAME K&am=100&cu=INR" class="upi-pay1">Pay Now!</a>
+
     </div>
   );
 }
