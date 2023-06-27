@@ -1,9 +1,10 @@
 import PaymentLinkGenerator from "./components/PaymentLinkGenerator";
 import "./App.css";
+import InsuarenceForm from "./components/InsuarenceForm";
 function App() {
-  const upId = "974614144692@paytm";
-  const merchantName = "hridhin";
-  const transactionAmount = "2700";
+  const upId = "Q897207355@ybl";
+  const merchantName = "Apple Restaurant";
+  const transactionAmount = "1";
   return (
     <div>
       <PaymentLinkGenerator
@@ -11,6 +12,7 @@ function App() {
         merchantName={merchantName}
         transactionAmount={transactionAmount}
       />
+      <InsuarenceForm />
     </div>
   );
 }
